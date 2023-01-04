@@ -1,0 +1,40 @@
+.navbar {
+  padding: 3rem;
+  padding-right: 14rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  li {
+    margin-left: 4rem;
+    list-style: none;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      text-decoration: none;
+      color: snow;
+      transition-duration: 500ms;
+      &:hover {
+        color: rgba(128, 128, 128, 0.616);
+        transition-duration: 500ms;
+      }
+    }
+  }
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.img {
+  width: 400px;
+  height: 50px;
+  background-image: url("./logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
