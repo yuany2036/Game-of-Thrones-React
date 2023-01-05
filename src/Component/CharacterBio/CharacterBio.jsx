@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import CharacterContext from "../../context/CharacterContext";
+import styles from "./CharacterBio.module.scss";
 
 const CharacterBio = () => {
   const { character } = useContext(CharacterContext);
@@ -16,9 +17,9 @@ const CharacterBio = () => {
   } = character;
 
   return (
-    <div>
-      <h1>{name}</h1>
-      <img src={image} alt={`${name}`} />
+    <main className={styles.main}>
+      <img className={styles.image} src={image} alt={`${name}`} />
+      <h1 className={styles.name}>{name}</h1>
       <h5>Played by</h5>
       <p>{actor}</p>
       {!alive ? (
@@ -29,7 +30,7 @@ const CharacterBio = () => {
       ) : (
         ""
       )}
-    </div>
+    </main>
   );
 };
 

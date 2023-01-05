@@ -9,15 +9,14 @@ const CharactersList = () => {
   const { setSearchField } = useContext(CharacterContext);
 
   const filterHandler = (e) => {
-    // e.preventDefault();
     setSearchField(e.target.value);
   };
 
   return (
     <>
-      <h1>Characters from A Song of Ice and Fire</h1>
+      <h1 className="pageTitle">Characters from Game of Thrones</h1>
       <SearchBox
-        placeholder="Search character..."
+        placeholder="Search for character..."
         onChangeHandler={filterHandler}
         className={style.characterSearch}
       />

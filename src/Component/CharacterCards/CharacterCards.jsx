@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import CharacterContext from "../../context/CharacterContext";
 import ContainerWrapper from "../ContainerWrapper";
+import style from "./CharacterCards.module.scss";
 // import { Route, Routes } from "react-router-dom";
 
 const CharacterCards = () => {
@@ -26,7 +27,7 @@ const CharacterCards = () => {
         return (
           <ContainerWrapper
             key={Math.random() + char.name}
-            className="characterPreview"
+            className={style.characterPreview}
           >
             <img
               onClick={characterClickHandler}
