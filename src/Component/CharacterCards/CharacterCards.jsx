@@ -18,7 +18,7 @@ const CharacterCards = () => {
       filteredCharacters.filter((char) => char.name.includes(selectedChar))[0]
     );
     setSearchField("");
-    navigate(`/${selectedChar.replace(" ", "_")}`);
+    navigate(`/characters/${selectedChar.replace(" ", "_")}`);
   };
 
   return (

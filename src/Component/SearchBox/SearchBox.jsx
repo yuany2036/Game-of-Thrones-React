@@ -1,4 +1,4 @@
-import styles from "./SearchBox.module.scss";
+// import styles from "./SearchBox.module.scss";
 
 const SearchBox = ({ placeholder, className, onChangeHandler }) => {
   return (

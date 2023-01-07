@@ -1,12 +1,35 @@
 .main {
   width: 100%;
+  height: 80vh;
   margin-top: 10rem;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 4fr 1fr 1fr;
+  grid-template-areas:
+    "backNutton . text photo"
+    ". . text name "
+    ". . text .";
 }
 
 .image {
   border-radius: 15px;
+  grid-area: photo;
+  align-self: center;
+}
+
+.text {
+  grid-area: text;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .name {
-  //   color: red;
+  font-size: 4rem;
+  grid-area: name;
+  justify-self: center;
+  align-self: flex-start;
+}
+
+.backButton {
+  grid-area: backButton;
+  width: 80px;
 }

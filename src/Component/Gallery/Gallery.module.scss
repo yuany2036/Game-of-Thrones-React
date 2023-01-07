@@ -1,0 +1,18 @@
+.image {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.main {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
