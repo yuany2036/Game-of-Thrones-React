@@ -21,6 +21,11 @@ export const GalleryContextProvider = ({ children }) => {
     setModalImg(images[imgNum - 1]);
   };
 
+  const dotClickHandler = (index) => {
+    setImgNum(index);
+    setModalImg(images[index]);
+  };
+
   const imageClickHandler = (e) => {
     if (e.target.tagName === "IMG") {
       setModalImg(e.target.src);
@@ -45,6 +50,7 @@ export const GalleryContextProvider = ({ children }) => {
         prevImg,
         imageClickHandler,
         closeModal,
+        dotClickHandler,
       }}
     >
       {children}

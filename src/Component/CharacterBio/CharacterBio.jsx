@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import CharacterContext from "../../context/CharacterContext";
 import InfoContainer from "../InfoContainer/InfoContainer";
@@ -8,7 +8,17 @@ import backButton from "../../img/backbutton.png";
 const CharacterBio = () => {
   const { character } = useContext(CharacterContext);
 
-  console.log(character);
+  useEffect(() => {
+    (async () => {
+      const res = await fetch(
+        `https://api.got.show/api/show/houses/${character.house}`
+      );
+      const data = await res.json();
+      console.log(data);
+    })();
+  }, []);
+
+  console.log(character.house);
 
   // prettier-ignore
   const {age, culture, origin, religion, siblings, name, image, actor, alive, allegiances, death, gender, house} = character;
