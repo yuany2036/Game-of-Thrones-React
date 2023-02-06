@@ -42,7 +42,7 @@
 
 <img src="README/GoT.gif" width="80%"  alt="Game of Thrones API" />
 
-Started off as a project from my web development course, where we had to create a hangman-like game where the player had to guess the title of a book or a movie using JavaScript within a Node.js environment, I decided to turn that into a project using React.js so that it can be played on a web page for easier access. You can also check out the original version <a href="">here</a>.
+Since Game of Thrones was one of my favorite shows of all time (unfortunately it was cancelled after only 4 seasons, such a shame...), I wanted to create a simple web page putting what I have learned about React and using APIs to use. And also I wanted to experiment building my own image gallery, and so there is also a gallery page where you can browse through some of the photos from the show, with a modal popping up whenever you click on a picture.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
